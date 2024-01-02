@@ -4,12 +4,7 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
 
-// const links = [
-//     {link:'https://mahmouddebo2.github.io/Movies-App/'},
-//     {link:'https://travel-app-nine-xi.vercel.app/'},
-//     {link:'https://egypt-shop-r8rs.vercel.app/'},
-//     {link:'https://dashboard-delta-inky.vercel.app/'},
-// ]
+export const revalidate = 30; //revalidate at most 30 seconds
 
 async function getData(slug: string) {
   const query = `
